@@ -1,0 +1,18 @@
+<!-- templates/edit.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Student</title>
+</head>
+<body>
+    <h1>Edit Student</h1>
+    <form method="post">
+        Name: <input type="text" name="name" value="{{ student.name }}" required><br>
+        Age: <input type="number" name="age" value="{{ student.age }}" required><br>
+        City: <input type="text" name="city" value="{{ student.city }}" required><br>
+        <button type="submit">Update</button>
+    </form>
+</body>
+</html>
